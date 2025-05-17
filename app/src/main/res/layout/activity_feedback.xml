@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedback"
+    android:background="#E3EDF1">
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="67dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/o"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Email Field -->
+
+    <!-- Phone Number Field -->
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="438dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Send Us Your FeedBack "
+        android:textColor="#1C1290"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="352dp"
+        android:layout_height="73dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="12dp"
+        android:text="We value your feedback! Please fill out the form below."
+        android:textAlignment="center"
+        android:textColor="#FBFAFA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="108dp"
+
+        android:hint="Name"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="12dp"
+
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:src="?attr/homeAsUpIndicator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Feedback Message Field -->
+
+
+    <!-- Feedback Message Field -->
+
+    <!-- Image View Below Feedback Field -->
+
+    <EditText
+        android:id="@+id/et_feedback"
+        android:layout_width="354dp"
+        android:layout_height="138dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="4dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="top"
+        android:hint="Describe Your Experience Here..."
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@id/feedback_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/feedback_image"
+        android:layout_width="352dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="88dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/des"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/btn_send_feedback"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="Send Feedback"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1C1290"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

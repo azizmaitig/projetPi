@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyParkEase2</string>
+    <string name="google_map_key" />
+    <string name="title_activity_google_maps">GoogleMapsActivity</string>
+</resources>

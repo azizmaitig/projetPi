@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3EDF1">
+
+    <!-- Header with aligned elements -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/back_icon"
+            android:contentDescription="Back"
+            android:padding="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Spot"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1C1290"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/back_button" />
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/logo_circle"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ScrollView to contain all parking spots -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/header_container"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Row 1: A1 and B1 -->
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_a1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_b1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <!-- Row 2: A2 and B2 -->
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_a2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spot_a1"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_b2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spot_b1"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <!-- Row 3: A3 and B3 -->
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_a3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spot_a2"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_b3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spot_b2"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <!-- Row 4: A4 and B4 -->
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_a4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spot_a3"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_b4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spot_b3"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <!-- Row 5: A5 and B5 -->
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_a5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spot_a4"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_b5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spot_b4"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <!-- Row 6: A6 and B6 -->
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_a6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spot_a5"
+                app:layout_constraintWidth_percent="0.48"/>
+
+            <include
+                layout="@layout/parking_spot_item"
+                android:id="@+id/spot_b6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spot_b5"
+                app:layout_constraintWidth_percent="0.48"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

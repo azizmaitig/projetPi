@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E3EDF1">
+
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="330dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="ENJOY YOUR JOURNEY WITH"
+        android:textColor="#1C1290"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/loginSubtitle"
+        android:layout_width="305dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="8dp"
+        android:text="PARKEASE"
+        android:textColor="@color/red"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginTitle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_circle"
+        app:layout_constraintTop_toBottomOf="@id/loginSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:textSize="20sp"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/btn_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="envoyerFeedback"
+        android:padding="10dp"
+        android:text="Feedback"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF5722"
+        app:layout_constraintTop_toBottomOf="@id/goButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Nouveau bouton "Rating" -->
+    <Button
+        android:id="@+id/btn_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#03A9F4"
+        app:layout_constraintTop_toBottomOf="@id/btn_feedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

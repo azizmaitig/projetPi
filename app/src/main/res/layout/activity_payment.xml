@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E3EDF1">
+
+    <!-- Credit Card Image -->
+    <ImageView
+        android:id="@+id/creditCardImage"
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/yd"
+        android:contentDescription="Credit Card info" />
+
+    <!-- Card Holder Name -->
+    <EditText
+        android:id="@+id/cardHolderName"
+        android:layout_width="382dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:hint="Card Holder Name"
+        android:inputType="textPersonName" />
+
+    <!-- Card Number -->
+    <EditText
+        android:id="@+id/cardNumber"
+        android:layout_width="372dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="8dp"
+        android:hint="Card Number"
+        android:inputType="number" />
+
+    <!-- Expiry Date -->
+    <EditText
+        android:id="@+id/expiryDate"
+        android:layout_width="369dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:hint="Expiry Date (MM/YY)"
+        android:inputType="text" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="362dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#1C1290"
+        android:text="Submit Payment"
+        android:textColor="@android:color/white" />
+
+    <!-- Feedback Button -->
+    <Button
+        android:id="@+id/feedbackButton"
+        android:layout_width="362dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFA500"
+        android:text="Feedback"
+        android:textColor="@android:color/white" />
+
+    <!-- Rating Button -->
+    <Button
+        android:id="@+id/ratingButton"
+        android:layout_width="362dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Rating"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
