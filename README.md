@@ -116,6 +116,42 @@ How can we create a **complete and intelligent parking management system** that:
 
 ---
 
+## Getting Started
+
+Clone the repository
+
+git clone https://github.com/your-org/ParkEase.git
+
+Set up backend
+
+Install dependencies and configure .env for database and auth
+
+Launch frontend (web and mobile)
+
+Start the web dashboard (React/Vue)
+
+Run the Flutter app on emulator or device
+
+Deploy AI models
+
+Ensure models are trained and placed under ai_module/
+
+Flash embedded systems
+
+Upload firmware to ESP32 microcontrollers
+
+Launch n8n
+
+Start n8n locally or via Docker with defined workflows
+
+## Acknowledgments
+
+👨‍🏫 Academic Mentors and Project Supervisors
+
+🛠 Open-source tools and libraries used across AI, web, and embedded systems
+
+🌍 Community contributions to frameworks like Flutter, TensorFlow, and n8n
+
 ## 🧪 Testing & Deployment
 
 - ✅ Unit tests for web and mobile features
