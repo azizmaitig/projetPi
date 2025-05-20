@@ -46,19 +46,19 @@ How can we create a **complete and intelligent parking management system** that:
 - **API Communication**: ******
 
 ### 🌐 Web Platform
-- **Frontend**: React.js / Vue.js
+- **Frontend**: React.js
 - **Backend**: Node.js (Express.js)
 - **Database**: Mysql
 - **Auth**: ********
 - 
 ### 🤖 Artificial Intelligence
 - **Frameworks**: TensorFlow, PyTorch, OpenCV
-- **Model**: YOLOv5, CNN
-- **Detection**: Accidents, intrusions, abnormal behavior
+- **Model**: YOLOv5,
+- **Detection**: Accidents, *intrusions, *abnormal behavior
 
 ### 🔌 Embedded System
 - **Microcontrollers**: ESP32, ESP32-CAM
-- **Sensors**: Ultrasonic, flame, motion, temperature (DHT11)
+- **Sensors**: Ultrasonic, flame, motion, *temperature (DHT11)
 - **Actuators**: Servos for barrier control
 - **Displays**: LCD, 7-segment
 - **Communication**: Wi-Fi (HTTP/MQTT)
@@ -77,7 +77,7 @@ How can we create a **complete and intelligent parking management system** that:
 - 🔐 User registration & login
 - 📅 Real-time reservation & availability
 - 🔔 Push notifications for alerts
-- 🗺️ Interactive map & status display
+-* 🗺️ Interactive map & status display
 - 🧾 Reservation history
 
 ---
@@ -104,7 +104,7 @@ How can we create a **complete and intelligent parking management system** that:
 ## 🔄 System Architecture
 
 - **Modular design** (frontend, backend, embedded, AI, automation)
-- **MVC & RESTful APIs**
+- ** RESTful APIs**
 - **Real-time synchronization** via Firebase or MQTT
 - **Workflow orchestration using n8n** to automate routine tasks and alert flows
 - **Scrum methodology** with 5 sprints covering feature blocks:
@@ -116,6 +116,42 @@ How can we create a **complete and intelligent parking management system** that:
 
 ---
 
+## Getting Started
+
+Clone the repository
+
+git clone https://github.com/your-org/ParkEase.git
+
+Set up backend
+
+Install dependencies and configure .env for database and auth
+
+Launch frontend (web and mobile)
+
+Start the web dashboard (React/Vue)
+
+Run the Flutter app on emulator or device
+
+Deploy AI models
+
+Ensure models are trained and placed under ai_module/
+
+Flash embedded systems
+
+Upload firmware to ESP32 microcontrollers
+
+Launch n8n
+
+Start n8n locally or via Docker with defined workflows
+
+## Acknowledgments
+
+*👨‍🏫 Academic Mentors and Project Supervisors
+
+🛠 Open-source tools and libraries used across AI, web, and embedded systems
+
+🌍 Community contributions to frameworks like Flutter, TensorFlow, and n8n
+
 ## 🧪 Testing & Deployment
 
 - ✅ Unit tests for web and mobile features
@@ -124,10 +160,5 @@ How can we create a **complete and intelligent parking management system** that:
 - 🌐 Web & mobile apps deployed on test environments
 - 🔄 Automated processes integrated with n8n
 
----
-
-## 📸 Screenshots & Demo
-
-> (Add here demo links or screenshots in the `/docs` folder when available)
 
 ---
