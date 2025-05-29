@@ -127,7 +127,4 @@ How can we create a **complete and intelligent parking management system** that:
 ---
 
 ## 📸 Screenshots & Demo
-
-> (Add here demo links or screenshots in the `/docs` folder when available)
-
----
+///////
